@@ -1,0 +1,58 @@
+@function vw($px-vw, $base-vw: 1700px) {
+  @return ($px-vw * 100vw) / $base-vw
+}
+
+@media screen and (max-width: 1700px) {
+  .container {
+    max-width: 100%;
+  }
+  body, html {
+    font-size: vw(20px);
+  }
+  .about-right {
+    width: calc(100% - 37.5rem);
+    margin-right: 0;
+  }
+  .about-right__quote {
+    padding-right: 3rem;
+  }
+  .biography-cont__bg {
+    left: -0.5rem;
+    bottom: 0;
+    width: 24.2rem;
+  }
+  .biography .about-right__quote {
+    padding-right: 3rem;
+  }
+  .projects-bot__slide-cont .pic {
+    right: -1rem;
+    left: auto;
+    width: 34.85%;
+  }
+  .header {
+    .container {
+      max-width: 100%;
+    }
+  }
+}
+
+@function vw($px-vw, $base-vw: 1450px) {
+  @return ($px-vw * 100vw) / $base-vw
+}
+
+@media screen and (max-width: 1450px) {
+  body, html {
+    font-size: vw(14px);
+  }
+  .hero-left {
+    padding-right: 20rem;
+  }
+  .hero-right .img {
+    width: 90%;
+    height: 0;
+    position: relative;
+    padding-top: 145.88%;
+    margin-left: auto;
+  }
+}
+
