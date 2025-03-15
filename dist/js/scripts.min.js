@@ -186,8 +186,8 @@ function startProductSlider() {
     if (productSlider.length) {
         productSlider.forEach((sld) => {
             let sldCont = sld.querySelector('.projects-bot__slider .swiper');
-            let sldNext = sld.querySelector('.slider-btn--prev');
-            let sldPrev = sld.querySelector('.slider-btn--next');
+            let sldPrev = sld.querySelector('.slider-btn--prev');
+            let sldNext = sld.querySelector('.slider-btn--next');
             let pagin = sld.querySelector('.dots');
 
             const swiper2 = new Swiper(sldCont, {
